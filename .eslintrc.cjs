@@ -21,7 +21,8 @@ module.exports = {
 		}
 	],
 	rules: {
-		'import/no-extraneous-dependencies': ['warn', { packageDir: './' }]
+		'import/no-extraneous-dependencies': ['warn', { packageDir: './' }],
+		'@typescript-eslint/no-throw-literal': 'off'
 	},
 	ignorePatterns: ['esm', 'cjs', 'node_modules']
 };
