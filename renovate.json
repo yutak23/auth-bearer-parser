@@ -1,0 +1,50 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:base",
+		"group:allNonMajor",
+		":separateMultipleMajorReleases",
+		"schedule:earlyMondays",
+		"schedule:automergeDaily",
+		":prConcurrentLimitNone",
+		":prHourlyLimitNone",
+		":timezone(Asia/Tokyo)"
+	],
+	"labels": ["renovate"],
+	"enabledManagers": ["npm"],
+	"major": { "labels": ["renovate", "update_major"] },
+	"platformAutomerge": true,
+	"packageRules": [
+		{
+			"description": "Automerge non-major updates",
+			"matchUpdateTypes": ["minor", "patch"],
+			"automerge": true
+		},
+		{
+			"matchPackageNames": [
+				"@commitlint/cli",
+				"@commitlint/config-conventional",
+				"@commitlint/types",
+				"@tsconfig/node16",
+				"@tsconfig/strictest",
+				"@types/node",
+				"@typescript-eslint/eslint-plugin",
+				"@typescript-eslint/parser",
+				"eslint",
+				"eslint-config-airbnb-base",
+				"eslint-config-airbnb-typescript",
+				"eslint-config-prettier",
+				"eslint-plugin-import",
+				"license-checker",
+				"lint-staged",
+				"nodemon",
+				"prettier",
+				"simple-git-hooks",
+				"tsconfig-paths",
+				"typescript"
+			],
+			"rangeStrategy": "bump"
+		}
+	],
+	"ignoreDeps": ["typescript"]
+}

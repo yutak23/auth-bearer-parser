@@ -1,0 +1,50 @@
+{
+	"name": "ts-node-oidc",
+	"version": "1.0.0",
+	"main": "index.ts",
+	"author": "yutak23",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"tsc:watch": "tsc --watch",
+		"nodemon": "nodemon --watch build/ build/app.js",
+		"tsc": "tsc",
+		"lint": "eslint . --ext .cjs,.mjs,.js,.ts,.cts,.mts",
+		"lint:fix": "eslint . --ext .cjs,.mjs,.js,.ts,.cts,.mts --fix",
+		"style": "prettier --write .",
+		"prepare": "npx simple-git-hooks"
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged --verbose",
+		"commit-msg": "npx commitlint -e"
+	},
+	"lint-staged": {
+		"*": "prettier --ignore-unknown --write",
+		"**/*.{cjs,mjs,js,ts,cts,mts}": [
+			"eslint"
+		],
+		"yarn.lock": "license-checker --production --failOn \"GPL;AGPL;LGPL;NGPL\" --summary"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.6.5",
+		"@commitlint/config-conventional": "^17.6.5",
+		"@commitlint/types": "^17.4.4",
+		"@tsconfig/node16": "^1.0.4",
+		"@tsconfig/strictest": "^2.0.1",
+		"@types/node": "^16.18.35",
+		"@typescript-eslint/eslint-plugin": "^5.59.11",
+		"@typescript-eslint/parser": "^5.59.11",
+		"eslint": "^8.42.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-airbnb-typescript": "^17.0.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-import": "^2.27.5",
+		"license-checker": "^25.0.1",
+		"lint-staged": "^13.2.2",
+		"nodemon": "^2.0.22",
+		"prettier": "^2.8.8",
+		"simple-git-hooks": "^2.8.1",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "~5.0.4"
+	}
+}
