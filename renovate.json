@@ -22,9 +22,6 @@
 		},
 		{
 			"matchPackageNames": [
-				"@commitlint/cli",
-				"@commitlint/config-conventional",
-				"@commitlint/types",
 				"@tsconfig/node16",
 				"@tsconfig/strictest",
 				"@types/node",
@@ -37,7 +34,6 @@
 				"eslint-plugin-import",
 				"license-checker",
 				"lint-staged",
-				"nodemon",
 				"prettier",
 				"simple-git-hooks",
 				"tsconfig-paths",
@@ -45,6 +41,5 @@
 			],
 			"rangeStrategy": "bump"
 		}
-	],
-	"ignoreDeps": ["typescript"]
+	]
 }

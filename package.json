@@ -7,7 +7,6 @@
 	"type": "module",
 	"scripts": {
 		"tsc:watch": "tsc --watch",
-		"nodemon": "nodemon --watch build/ build/app.js",
 		"tsc": "tsc",
 		"lint": "eslint . --ext .cjs,.mjs,.js,.ts,.cts,.mts",
 		"lint:fix": "eslint . --ext .cjs,.mjs,.js,.ts,.cts,.mts --fix",
@@ -35,7 +34,6 @@
 		"eslint-plugin-import": "^2.27.5",
 		"license-checker": "^25.0.1",
 		"lint-staged": "^13.2.2",
-		"nodemon": "^2.0.22",
 		"prettier": "^2.8.8",
 		"simple-git-hooks": "^2.8.1",
 		"tsconfig-paths": "^4.2.0",
