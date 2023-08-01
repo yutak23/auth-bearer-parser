@@ -23,7 +23,7 @@
 		{
 			"matchPackageNames": [
 				"@tsconfig/node16",
-				"@tsconfig/strictest",
+				"@tsconfig/recommended",
 				"@types/node",
 				"@typescript-eslint/eslint-plugin",
 				"@typescript-eslint/parser",

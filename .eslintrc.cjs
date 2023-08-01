@@ -23,5 +23,5 @@ module.exports = {
 	rules: {
 		'import/no-extraneous-dependencies': ['warn', { packageDir: './' }]
 	},
-	ignorePatterns: ['build', 'node_modules']
+	ignorePatterns: ['esm', 'cjs', 'node_modules']
 };
