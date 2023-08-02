@@ -1,7 +1,14 @@
 {
 	"name": "auth-bearer-parser",
 	"version": "1.0.0",
-	"author": "yutak23",
+	"author": {
+		"name": "yutak23",
+		"url": "https://github.com/yutak23"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com:yutak23/auth-bearer-parser.git"
+	},
 	"license": "MIT",
 	"type": "module",
 	"types": "./esm/index.d.ts",
@@ -58,5 +65,23 @@
 	"files": [
 		"esm",
 		"cjs"
+	],
+	"keywords": [
+		"node",
+		"nodejs",
+		"javascript",
+		"js",
+		"library",
+		"lib",
+		"module",
+		"typescript",
+		"ts",
+		"esm",
+		"express",
+		"auth",
+		"authorization",
+		"bearer",
+		"token",
+		"parser"
 	]
 }
