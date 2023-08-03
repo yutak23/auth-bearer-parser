@@ -8,13 +8,13 @@ Parse the `Authorization` header and assign the Bearer token to `req.token`.
 ### npm
 
 ```sh
-$ npm install bearer-token-parser
+$ npm install auth-bearer-parser
 ```
 
 ### yarn
 
 ```sh
-$ yarn add bearer-token-parser
+$ yarn add auth-bearer-parser
 ```
 
 ## Usage
