@@ -1,10 +1,7 @@
 {
 	"name": "auth-bearer-parser",
 	"version": "1.0.0",
-	"author": {
-		"name": "yutak23",
-		"url": "https://github.com/yutak23"
-	},
+	"author": "yutak23 <yuta.katayama.23+github@gmail.com> (https://github.com/yutak23)",
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://git@github.com:yutak23/auth-bearer-parser.git"

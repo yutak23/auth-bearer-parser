@@ -7,7 +7,7 @@ declare module 'express-serve-static-core' {
 	}
 }
 
-interface BearerParserOptions {
+export interface BearerParserOptions {
 	/**
 	 * @default false
 	 * @description If true, throw error when bearer token is invalid.

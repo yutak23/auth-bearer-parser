@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import { Request, Response } from 'express';
-import authBearerParser from '../src/index.js';
+import authBearerParser, { BearerParserOptions } from '../src/index.js';
 
 describe('Test authBearerParser', () => {
 	const reqHander = authBearerParser();
@@ -55,7 +55,8 @@ describe('Test authBearerParser', () => {
 });
 
 describe('Test authBearerParser with isThrowError', () => {
-	const reqHander = authBearerParser({ isThrowError: true });
+	const options: BearerParserOptions = { isThrowError: true };
+	const reqHander = authBearerParser(options);
 
 	it('no authorization headers', () => {
 		const req: Partial<Request> = {
