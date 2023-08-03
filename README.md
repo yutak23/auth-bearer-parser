@@ -1,4 +1,4 @@
-# auth-bearer-parser ![test](https://github.com/yutak23/auth-bearer-parser/actions/workflows/test.yaml/badge.svg)
+# auth-bearer-parser [![test](https://github.com/yutak23/auth-bearer-parser/actions/workflows/test.yaml/badge.svg)](https://github.com/yutak23/auth-bearer-parser/actions/workflows/test.yaml)
 
 This is a parsing middleware for Bearer tokens that can be used with the Express framework.  
 Parse the `Authorization` header and assign the Bearer token to `req.token`.
