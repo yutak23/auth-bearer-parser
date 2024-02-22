@@ -54,7 +54,7 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-import": "^2.29.1",
 		"npm-check-updates": "^16.10.17",
-		"npm-run-all2": "^5.0.0",
+		"npm-run-all2": "^6.0.0",
 		"prettier": "^3.2.5",
 		"typescript": "^5.3.3",
 		"vitest": "^1.0.0"
