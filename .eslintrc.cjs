@@ -22,7 +22,13 @@ module.exports = {
 	],
 	rules: {
 		'import/no-extraneous-dependencies': ['warn', { packageDir: './' }],
-		'@typescript-eslint/no-throw-literal': 'off'
+		'@typescript-eslint/no-throw-literal': 'off',
+		// TypeError: context.getScope is not a function in "eslint-plugin-import"
+		// Temporary measures until transition to flat configurations
+		'import/newline-after-import': 'off',
+		'import/no-named-as-default': 'off',
+		'import/no-mutable-exports': 'off',
+		'import/no-amd': 'off'
 	},
 	ignorePatterns: ['esm', 'cjs', 'node_modules']
 };
